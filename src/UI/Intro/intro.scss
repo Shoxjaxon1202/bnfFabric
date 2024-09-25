@@ -1,0 +1,51 @@
+.product-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3d3d3d; /* Kulrang fon rangi */
+  border-radius: 20px;
+  padding: 20px;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.product-image {
+  position: relative;
+  top: 70px;
+  left: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 120%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.product-info {
+  color: white;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.product-info h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.product-info h3 {
+  font-weight: 700;
+  font-size: 5rem;
+  margin: 5px 0;
+}
+
+.product-info h1 {
+  font-size: 5.5rem;
+  margin: 0;
+  font-weight: bold;
+}

@@ -1,0 +1,113 @@
+.contact {
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 120px;
+  }
+  .location {
+    height: 600px;
+  }
+  &_right {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+  }
+  &_left {
+    width: 50%;
+  }
+  &_left form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    input {
+      margin-top: 20px;
+      width: 100%;
+      border-radius: 50px;
+      border: none;
+      background-color: #efefef;
+      padding: 20px 0 20px 35px;
+      margin-bottom: 0;
+      font-weight: 700;
+      color: gray;
+    }
+    textarea {
+      width: 100% !important;
+      margin-top: 20px;
+      border-radius: 20px;
+      height: 100%;
+      max-height: 300px;
+      min-height: 263px;
+      border-radius: 50px;
+      border: none;
+      background-color: #efefef;
+      padding: 20px 0 20px 35px;
+      margin-bottom: 0;
+      font-weight: 700;
+      color: gray;
+    }
+  }
+  &_title {
+    font-family: "Poppins", Sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 73px;
+    letter-spacing: -1.2px;
+    color: black;
+  }
+  &_btn {
+    margin-top: 20px;
+    background-color: #f42c37;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    margin-right: 0;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    letter-spacing: -0.48px;
+    line-height: 19px;
+    color: white;
+    &:hover {
+      background-color: black;
+      transition: 0.5s all;
+      color: white;
+    }
+  }
+  &_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    gap: 20px;
+  }
+  &_box {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  &_subtitle {
+    font-family: "Arial", Sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 2px;
+  }
+  &_subtext {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: -0.45px;
+  }
+  &_textbox{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+}
