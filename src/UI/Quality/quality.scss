@@ -208,3 +208,105 @@
     outline: none;
   }
 }
+
+@media (max-width: 1200px) {
+  .quality-text h1 {
+    font-size: 5rem; // Kichikroq ekranlarda sarlavha o'lchamini kamaytiradi
+  }
+
+  .quality-description h2 {
+    font-size: 2rem; // Kichikroq ekranlarda kichik sarlavha o'lchamini kamaytiradi
+  }
+}
+@media (max-width: 992px) {
+  .bed-image {
+    left: 0;
+    position: relative; // Pozitsiyani relative qilib o'zgartirish
+    width: 80%; // Rasm kengligini 80% ga o'zgartiradi
+    img {
+      position: relative;
+      right: 0;
+      width: 100%; // Rasm kengligini 100% ga o'zgartiradi
+      height: auto; // Rasm balandligini avtomatik belgilash
+      top: 0; // Yuqoridan joylashuvini o'zgartirish
+    }
+  }
+
+  .quality-container {
+    flex-direction: column; // Kichik ekranlarda ustunlar yo'nalishini vertikalga o'tkazadi
+    align-items: center; // Markazga joylashadi
+  }
+
+  .quality-text,
+  .quality-description {
+    text-align: center; // Matnlarni markazda joylashtiradi
+    padding: 10px; // Paddingni kamaytiradi
+  }
+}
+
+@media (max-width: 768px) {
+  .quality-text h1 {
+    font-size: 4rem; // Sarlavha o'lchamini yanada kamaytiradi
+  }
+
+  .quality-description h2 {
+    font-size: 1.5rem; // Kichik sarlavha o'lchamini yanada kamaytiradi
+  }
+
+  .quality_btn {
+    padding: 8px 16px; // Tugma o'lchamini kamaytiradi
+  }
+}
+
+@media (max-width: 576px) {
+  .quality-text p,
+  .quality-description p {
+    font-size: 1rem; // Matn o'lchamini kamaytiradi
+  }
+
+  .quality-container {
+    padding: 5%; // Konteynerning ichki bo'shligini kamaytiradi
+  }
+}
+
+@media (max-width: 300px) {
+  .quality-container {
+    flex-direction: column; // Vertikal yo'nalish
+    padding: 5%; // Paddingni kamaytirish
+  }
+
+  .quality-text,
+  .quality-description {
+    text-align: center; // Matnlarni markazda joylashtirish
+    padding: 10px; // Paddingni kamaytirish
+  }
+
+  .bed-image {
+    width: 100%; // Rasm kengligini 100% ga o'zgartiradi
+    img {
+      width: 100%; // Rasm kengligini 100% ga o'zgartiradi
+      height: auto; // Rasm balandligini avtomatik belgilash
+      top: -20px; // Rasmning yuqori qismida joylashishini o'zgartiradi
+    }
+  }
+
+  .quality-text h1 {
+    font-size: 3rem; // Sarlavha o'lchamini kamaytiradi
+  }
+
+  .quality-description h2 {
+    font-size: 1.2rem; // Kichik sarlavha o'lchamini kamaytiradi
+  }
+
+  .quality_text p,
+  .quality-description p {
+    font-size: 0.8rem; // Matn o'lchamini kamaytiradi
+  }
+
+  .quality_btn,
+  .quality_btn2,
+  .quality_btn3 {
+    padding: 8px 10px; // Tugma o'lchamini kamaytiradi
+    font-size: 14px; // Tugma matn o'lchamini kamaytiradi
+  }
+}

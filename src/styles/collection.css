@@ -1,0 +1,230 @@
+.collection {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.collection_right {
+  width: 80%;
+}
+.collection__subscribe-form {
+  display: flex;
+  align-items: center;
+  background: linear-gradient(90deg, rgb(255, 255, 255) 0%, rgb(220, 220, 220) 100%);
+  border-radius: 50px;
+  max-width: 350px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.collection__subscribe-form input {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 50px 0 0 50px;
+  outline: none;
+  flex-grow: 1;
+  font-size: 14px;
+  color: #999;
+  background-color: transparent;
+}
+.collection__subscribe-form input::-moz-placeholder {
+  color: #b0b0b0;
+}
+.collection__subscribe-form input::placeholder {
+  color: #b0b0b0;
+}
+.collection__subscribe-form .collection_button {
+  margin: 4px;
+  background-color: #ff4b4b;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  width: 44px;
+  height: 40px;
+  transition: background-color 0.3s ease;
+}
+.collection .collection_icon {
+  font-size: 20px !important;
+}
+.collection_cards {
+  margin: 40px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 50px;
+  height: auto;
+}
+.collection_card {
+  width: 200px;
+  height: 250px;
+}
+.collection_img {
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+.collection_title {
+  font-family: "Poppins", sans-serif;
+  color: var(--e-global-color-text);
+  font-size: 35px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.collection_text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: gray;
+}
+.collection_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.collection_btn {
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  color: #fff;
+  background-color: black;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+.collection_subtitle {
+  font-size: 1em;
+  font-weight: 500;
+  line-height: 23px;
+  color: var(--e-global-color-text);
+  padding-top: 4px;
+  letter-spacing: -0.51px;
+}
+.collection_accordion {
+  box-shadow: none !important;
+  margin-top: 30px;
+}
+.collection_accordion::before {
+  background-color: white !important;
+}
+.collection_accordion_menus {
+  display: flex !important;
+  flex-direction: column;
+  align-items: start;
+}
+.collection_accordion_menu {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.48px;
+  margin-bottom: 8px !important;
+}
+.collection_accordion_title {
+  font-family: "Poppins", sans-serif !important;
+  color: var(--e-global-color-text) !important;
+  font-size: 20px !important;
+  font-weight: 700 !important;
+  text-transform: capitalize !important;
+  line-height: 28px !important;
+  letter-spacing: -0.6px !important;
+}
+
+.collection_accordion_menu {
+  cursor: pointer;
+  color: black;
+}
+
+.collection_accordion_menu.active {
+  color: red !important;
+}
+
+/* Max width 1500px */
+/* Max width 1000px */
+@media (max-width: 1000px) {
+  .collection_right {
+    width: 85%;
+  }
+  .collection_cards {
+    gap: 30px;
+  }
+  .collection_card {
+    width: 160px;
+    height: 220px;
+  }
+  .collection_img {
+    width: 160px;
+    height: 160px;
+  }
+}
+/* Max width 768px */
+@media (max-width: 768px) {
+  .collection {
+    flex-direction: column;
+  }
+  .collection_right {
+    width: 80%;
+  }
+  .collection_cards {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  .collection_card {
+    width: 90%;
+    height: 200px;
+  }
+  .collection_img {
+    width: 100%;
+    height: 140apx;
+  }
+  .collection_btn {
+    padding: 8px 15px;
+  }
+}
+/* Max width 400px */
+@media (max-width: 400px) {
+  .collection_right {
+    width: 100%;
+  }
+  .collection_cards {
+    gap: 15px;
+  }
+  .collection_card {
+    width: 120px;
+    height: 180px;
+  }
+  .collection_img {
+    width: 120px;
+    height: 120px;
+  }
+  .collection_btn {
+    padding: 6px 10px;
+  }
+}
+/* Max width 300px */
+@media (max-width: 300px) {
+  .collection_right {
+    width: 100%;
+  }
+  .collection_top {
+    gap: 10px;
+  }
+  .collection_title {
+    font-size: 25px;
+  }
+  .collection_cards {
+    gap: 10px;
+  }
+  .collection_card {
+    margin: auto;
+    width: 250px;
+    height: auto;
+  }
+  .collection_img {
+    width: 100%;
+    height: 150px;
+  }
+  .collection_btn {
+    padding: 4px 8px;
+  }
+}/*# sourceMappingURL=collection.css.map */

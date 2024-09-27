@@ -1,0 +1,199 @@
+.gadjet {
+  &_wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  &_img {
+    width: 85%;
+    height: 520px;
+    border-radius: 20px;
+    margin-bottom: 50px;
+  }
+  &_span {
+    text-align: start;
+    color: #f42c37;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 23px;
+    margin-right: 20px;
+  }
+  &_subtext {
+    width: 75%;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 23px;
+    margin-bottom: 20px;
+  }
+  &_text {
+    width: 75%;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  &_bottom {
+    margin-top: 150px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_title {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+      font-size: 25px;
+    }
+    &_text {
+      font-size: 100%;
+      line-height: 1.5;
+      font-style: normal;
+      color: #444;
+      margin-top: 15px;
+      margin-bottom: 50px;
+    }
+    form {
+      //   width: 80%;
+      //   display: flex;
+      align-items: center;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &_input {
+      width: 47%;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      padding: 15px 20px;
+      background-color: #f5f5f5;
+      font-family: "Poppins", sans-serif;
+      margin-bottom: 50px;
+    }
+
+    &_btn {
+      margin-top: 30px !important;
+    }
+    textarea {
+      margin-top: 15px;
+      width: 100%;
+      margin: auto;
+      padding: 20px;
+      height: 200px;
+      border: none;
+      outline: none;
+      border-radius: 30px;
+      background-color: #f5f5f5;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+}
+
+/* Max width 1500px */
+@media (max-width: 1500px) {
+  .gadjet {
+    &_img {
+      height: 480px;
+      margin-bottom: 45px;
+    }
+    &_subtext,
+    &_text {
+      width: 80%;
+      font-size: 15px;
+    }
+  }
+}
+
+/* Max width 1000px */
+@media (max-width: 1000px) {
+  .gadjet {
+    &_img {
+      height: 450px;
+    }
+    &_subtext,
+    &_text {
+      width: 90%;
+    }
+    &_bottom {
+      margin-top: 120px;
+    }
+  }
+}
+
+/* Max width 768px */
+@media (max-width: 768px) {
+  .gadjet {
+    &_img {
+      height: 400px;
+      width: 90%;
+    }
+    &_subtext,
+    &_text {
+      width: 100%;
+    }
+    &_span {
+      font-size: 14px;
+    }
+  }
+}
+
+/* Max width 400px */
+@media (max-width: 400px) {
+  .gadjet {
+    &_img {
+      height: 350px;
+    }
+    &_subtext,
+    &_text {
+      font-size: 14px;
+    }
+    &_span {
+      font-size: 13px;
+    }
+    &_bottom_title {
+      font-size: 22px;
+    }
+  }
+}
+
+/* Max width 300px */
+@media (max-width: 300px) {
+  .gadjet {
+    &_img {
+      height: 250px;
+    }
+    &_subtext,
+    &_text {
+      font-size: 12px;
+    }
+    &_span {
+      font-size: 12px;
+    }
+    &_bottom_title {
+      font-size: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 660px){
+  .gadjet{
+    
+    &_bottom{
+      width: 100%;
+      input{
+        width: 100%;
+      }
+      input:last-child{
+        margin-left: 0 !important;
+      }
+    }
+  }
+}

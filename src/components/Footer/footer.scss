@@ -3,17 +3,21 @@
   border-top: 1px solid #eaeaea;
   font-family: "Arial", sans-serif;
   width: 100%;
+
   &_wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: row;
     width: 1250px;
     margin: 50px auto;
   }
+
   &__logo {
-    width: 200px !important;
+    width: 200px;
   }
+
   &__left {
     max-width: 300px;
 
@@ -57,10 +61,6 @@
             color: #000;
           }
         }
-
-        // .active {
-        //   color: red;
-        // }
       }
     }
   }
@@ -70,11 +70,13 @@
     margin-bottom: 5px;
     color: #666;
   }
+
   &__contacts p a {
     font-size: 14px;
     margin-bottom: 5px;
     color: #866;
   }
+
   &__subscribe-form {
     display: flex;
 
@@ -146,17 +148,176 @@
   }
 }
 
-.BottomFooter {
-  width: 100%;
-  background-color: black;
-  &_wrapper {
-    width: 1250px;
-    margin: auto;
-    padding: 20px 0;
-    color: white;
+// .BottomFooter {
+//   width: 100%;
+//   background-color: black;
+
+//   &_wrapper {
+//     width: 1250px;
+//     margin: auto;
+//     padding: 20px 0;
+//     color: white;
+//   }
+
+//   &_text {
+//     color: gray;
+//     font-size: 15px;
+//   }
+// }
+
+@media (max-width: 1200px) {
+  .footer_wrapper {
+    width: 90%; // Katta ekranlar uchun 1250px o'rniga 100%
   }
-  &_text {
-    color: gray;
-    font-size: 15px;
+
+  .footer__left {
+    max-width: 250px; // Kichik ekranlar uchun maksimal kenglik
+  }
+}
+
+@media (max-width: 992px) {
+  .footer__menu,
+  .footer__contacts,
+  .footer__subscribe {
+    h4 {
+      font-size: 14px; // Sarlavhalar uchun kichikroq shrift
+    }
+
+    ul {
+      li {
+        margin-bottom: 8px; // Ro'yxat elementlari orasidagi masofa
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer_wrapper {
+    flex-direction: column; // Flex yo'nalishini ustun qilib o'zgartirish
+    align-items: flex-start; // O'ng tomonga yo'nalish
+  }
+  .footer__logo {
+    width: 100%;
+  }
+  .footer__subscribe-form {
+    // flex-direction: column; // Subscribe-forma uchun ustun yo'nalishi
+    max-width: 100%; // Kenglikni 100% qilish
+  }
+}
+
+@media (max-width: 576px) {
+  .footer__description {
+    font-size: 14px; // Kichik ekranlar uchun tavsif shriftini kamaytirish
+  }
+
+  .footer__subscribe-form input {
+    width: 80%;
+    height: 20px;
+  }
+
+  .footer__subscribe-form button {
+    width: 35%;
+    font-size: 10px;
+    padding: 8px 15px; // Kichik ekranlar uchun tugma to'ldirish
+  }
+}
+
+@media (max-width: 400px) {
+  .footer__left {
+    &__logo {
+      width: 120px; // Kichik ekranlar uchun logo kengligi
+    }
+
+    &__description {
+      margin: 15px 0; // Kichik ekranlar uchun tavsif masofasini kamaytirish
+    }
+  }
+
+  .footer__contacts p {
+    font-size: 12px; // Kichik ekranlar uchun kontaktlar shriftini kamaytirish
+  }
+}
+
+@media (max-width: 300px) {
+  .footer_wrapper {
+    padding: 0 15px; // Kichik ekranlar uchun padding
+  }
+
+  .footer__left {
+    max-width: 100%; // Kichik ekranlar uchun maksimal kenglik
+  }
+
+  .footer__subscribe-form {
+    max-width: 100%; // Kichik ekranlar uchun maksimal kenglik
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &_wrapper {
+      width: 100%; // Kenglikni 100% qilib qo'yamiz
+      padding: 0 15px; // Chetidan padding qo'shamiz
+    }
+
+    &_list {
+      display: none; // 768px dan kichik ekranda menyu yashiriladi
+    }
+
+    &_list.open {
+      display: flex; // Toggle ochilganda menyu ko'rinadi
+    }
+
+    &_select {
+      width: 100%; // Select kengligini 100% qilib qo'yamiz
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .footer__wrapper {
+      width: 100%; // Kenglikni 100% qilib qo'yamiz
+      padding: 0 15px; // Chetidan padding qo'shamiz
+      flex-direction: column; // Flex yo'nalishini ustun qilib o'zgartirish
+      align-items: flex-start; // O'ng tomonga yo'nalish
+    }
+
+    .footer__subscribe-form {
+      // flex-direction: column; // Subscribe-forma uchun ustun yo'nalishi
+      max-width: 80%; // Kenglikni 100% qilish
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    &_wrapper {
+      width: 100%; // Kenglikni 100% qilib qo'yamiz
+      padding: 0 15px; // Chetidan padding qo'shamiz
+      flex-direction: column; // Flex yo'nalishini ustun qilib o'zgartirish
+      align-items: flex-start; // O'ng tomonga yo'nalish
+    }
+
+    &__logo {
+      width: 100%; // Kichik ekranlar uchun logo kengligini 100% qilib qo'yamiz
+    }
+
+    &__subscribe-form input {
+      // flex-direction: column; // Subscribe-forma uchun ustun yo'nalishi
+      // max-width: 55%; // Kenglikni 100% qilish
+    }
+
+    &__menu,
+    &__contacts,
+    &__subscribe {
+      h4 {
+        font-size: 14px; // Sarlavhalar uchun kichikroq shrift
+      }
+
+      ul {
+        li {
+          margin-bottom: 8px; // Ro'yxat elementlari orasidagi masofa
+        }
+      }
+    }
   }
 }

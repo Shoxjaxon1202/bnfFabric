@@ -1,0 +1,75 @@
+.BottomFooter {
+  width: 100%;
+  background-color: black;
+
+  &_wrapper {
+    width: 80%; // Kenglikni 80% qilib belgiladik
+    margin: auto;
+    padding: 20px 0;
+    color: white;
+  }
+
+  &_text {
+    color: gray;
+    font-size: 15px;
+  }
+}
+
+// 1200px va undan yuqori ekranlar uchun
+@media (min-width: 1200px) {
+  .BottomFooter_wrapper {
+    width: 85%; // 1200px va undan yuqori ekranlar uchun kenglikni 85% qilamiz
+    padding: 25px 0;
+  }
+
+  .BottomFooter_text {
+    font-size: 17px;
+  }
+}
+
+// 1500px va undan yuqori ekranlar uchun
+@media (min-width: 1500px) {
+  .BottomFooter_wrapper {
+    width: 90%; // 1500px va undan yuqori ekranlar uchun kenglikni 90% qilamiz
+    padding: 30px 0;
+  }
+
+  .BottomFooter_text {
+    font-size: 18px;
+  }
+}
+
+// Kichik ekranlar uchun (768px dan kichik)
+@media (max-width: 768px) {
+  .BottomFooter_wrapper {
+    width: 95%; // Kenglikni 95% qilib belgiladik kichik ekranlar uchun
+    padding: 10px 15px;
+  }
+
+  .BottomFooter_text {
+    font-size: 13px;
+  }
+}
+
+// Yanada kichik ekranlar uchun (576px dan kichik)
+@media (max-width: 576px) {
+  .BottomFooter_wrapper {
+    width: 100%; // Eng kichik ekranlar uchun kenglikni 100% qilamiz
+    padding: 8px 10px;
+  }
+
+  .BottomFooter_text {
+    font-size: 12px;
+  }
+}
+
+// Juda kichik ekranlar uchun (400px dan kichik)
+@media (max-width: 400px) {
+  .BottomFooter_wrapper {
+    padding: 5px;
+  }
+
+  .BottomFooter_text {
+    font-size: 11px;
+  }
+}

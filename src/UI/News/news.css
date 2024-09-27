@@ -1,0 +1,113 @@
+.new {
+  width: 100%;
+  margin: 50px auto;
+}
+.new_cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+.new_card {
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.new_img {
+  width: 100%;
+  border-radius: 20px;
+}
+.new_subtext {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  color: gray;
+  margin: 20px 0px;
+}
+.new_title {
+  color: blue;
+  font-family: "Poppins", Sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -1px;
+}
+.new_text {
+  font-family: "Poppins", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 23px;
+  margin: 20px 0px;
+}
+.new .image_container {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+.new .image_container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: all 0.3s ease;
+}
+.new .image_container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 6px 6px rgba(0, 0, 0, 0.15);
+  transform: scale(1.05); /* Kichik kattalashtirish effekti */
+}
+
+@media (max-width: 1500px) {
+  .new {
+    margin: 40px auto;
+  }
+  .new_cards {
+    gap: 30px;
+  }
+  .new_card {
+    width: 100%;
+  }
+  .new_title {
+    font-size: 18px;
+  }
+  .new_text {
+    font-size: 15px;
+  }
+  .new_subtext {
+    margin: 15px 0px;
+  }
+}
+@media (max-width: 768px) {
+  .new {
+    margin: 30px auto;
+  }
+  .new_cards {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .new_title {
+    font-size: 16px;
+  }
+  .new_text {
+    font-size: 14px;
+  }
+  .new_subtext {
+    margin: 10px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .new {
+    margin: 20px auto;
+  }
+  .new_cards {
+    gap: 15px;
+  }
+  .new_title {
+    font-size: 14px;
+  }
+  .new_text {
+    font-size: 12px;
+  }
+  .new_subtext {
+    margin: 5px 0px;
+  }
+}/*# sourceMappingURL=news.css.map */

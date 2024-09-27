@@ -20,7 +20,7 @@ const Home = ({ data }) => {
       <AutumnCollection data={data} />
       <Quality3 />
       <SummerCollection data={data} />
-      <News />
+      <News data={data} />
     </div>
   );
 };

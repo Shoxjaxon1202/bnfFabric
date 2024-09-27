@@ -43,6 +43,10 @@ import garden from "../assets/img/Evening Garden.jpg";
 import Marquis from "../assets/img/Marquis's Feather.jpg";
 import roses from "../assets/img/Lavender roses.jpg";
 import Collection from "../Pages/Collection";
+import Item from "../UI/Item/Item";
+import Gadjets from "../components/Gadjets/Gadjets";
+import Gadjets2 from "../components/Gadjets2/Gadjets2";
+import Gadjets3 from "../components/Gadjets3/Gadjets3";
 
 const Router = () => {
   const data = [
@@ -501,10 +505,16 @@ const Router = () => {
   return (
     <Routes>
       <Route path="/home" element={<Home data={data} />} />
+      <Route path="/" element={<Home data={data} />} />
       <Route path="/about" element={<About />} />
       <Route path="/collection" element={<Collection data={data} />} />
       <Route path="/contact" element={<Contact />} />
+      {/* <Route path="/productItem" element={<Item />} /> */}
+      <Route path="/Item/:id" element={<Item data={data} />} />
       <Route path="*" element={<NotFound />} />
+      <Route path="gadjets1" element={<Gadjets />} />
+      <Route path="gadjets2" element={<Gadjets2 />} />
+      <Route path="gadjets3" element={<Gadjets3 />} />
     </Routes>
   );
 };

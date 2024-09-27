@@ -1,0 +1,116 @@
+.about {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 180px;
+}
+.about_left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.about_right {
+  width: 50%;
+}
+.about_title {
+  font-family: "Poppins", Sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 76px;
+  letter-spacing: -1.5px;
+  color: black;
+  width: 100%;
+}
+.about_text {
+  color: gray;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.about_img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+/* Max width 1500px */
+@media (max-width: 1500px) {
+  .about {
+    gap: 150px;
+  }
+  .about_left, .about_right {
+    width: 48%;
+  }
+  .about_title {
+    font-size: 36px;
+  }
+}
+/* Max width 1000px */
+@media (max-width: 1000px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+  }
+  .about_left, .about_right {
+    width: 90%;
+  }
+  .about_title {
+    font-size: 32px;
+  }
+}
+/* Max width 768px */
+@media (max-width: 768px) {
+  .about {
+    gap: 50px;
+  }
+  .about_left, .about_right {
+    width: 100%;
+  }
+  .about_title {
+    font-size: 28px;
+  }
+  .about_text {
+    font-size: 14px;
+  }
+}
+/* Max width 400px */
+@media (max-width: 400px) {
+  .about {
+    gap: 30px;
+  }
+  .about_left, .about_right {
+    width: 100%;
+  }
+  .about_title {
+    font-size: 24px;
+  }
+  .about_text {
+    font-size: 13px;
+  }
+  .about_img {
+    width: 90%;
+    height: auto;
+  }
+}
+/* Max width 300px */
+@media (max-width: 300px) {
+  .about {
+    gap: 20px;
+  }
+  .about_left, .about_right {
+    width: 100%;
+  }
+  .about_title {
+    font-size: 20px;
+  }
+  .about_text {
+    font-size: 12px;
+  }
+  .about_img {
+    width: 85%;
+    height: auto;
+  }
+}/*# sourceMappingURL=about.css.map */

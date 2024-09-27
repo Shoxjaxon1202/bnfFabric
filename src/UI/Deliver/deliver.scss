@@ -40,3 +40,58 @@
     opacity: 0.8;
   }
 }
+
+@media (max-width: 768px) {
+  .deliver {
+    display: flex;
+    align-items: center;
+    
+    margin: 70px auto; // Marginni kamaytirish
+    &_cards {
+      gap: 20px;
+      flex-direction: column; // Ustunlar yo'nalishini vertikalga o'tkazish
+      align-items: center; // Elementlarni boshlanishiga qarab joylashtirish
+      justify-content: center;
+    }
+    &_card {
+      max-height: none; // Maksimal balandlikni olib tashlash
+      width: 100%; // Karta kengligini 100% ga o'zgartirish
+      gap: 10px; // Bo'shliqni kamaytirish
+    }
+    &_img {
+      width: 40px; // Rasm kengligini kamaytirish
+      height: 30px; // Rasm balandligini kamaytirish
+    }
+    &_right {
+      align-items: flex-start; // O'ng tomondagi matnni yuqoriga joylashtirish
+    }
+    &_title {
+      font-size: 0.9rem; // Sarlavha o'lchamini kamaytirish
+    }
+    &_text {
+      font-size: 0.7rem; // Matn o'lchamini kamaytirish
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .deliver {
+    margin: 40px auto; // Marginni yanada kamaytirish
+    &_cards {
+      // gap: 5px; // Bo'shliqni yanada kamaytirish
+    }
+    &_card {
+      gap: 5px; // Karta bo'shliqni kamaytirish
+    }
+    &_img {
+      width: 30px; // Rasm kengligini yana kamaytirish
+      height: 25px; // Rasm balandligini yana kamaytirish
+    }
+    &_title {
+      font-size: 0.8rem; // Sarlavha o'lchamini yanada kamaytirish
+    }
+    &_text {
+      font-size: 0.6rem; // Matn o'lchamini yanada kamaytirish
+    }
+  }
+}

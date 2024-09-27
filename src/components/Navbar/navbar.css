@@ -1,0 +1,186 @@
+.navbar {
+  margin-top: 30px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.navbar_item {
+  font-family: sans-serif;
+  font-size: 14px;
+  transition: color 0.3s ease, transform 0.4s ease;
+  font-weight: 700 !important;
+  letter-spacing: 1px;
+  color: gray;
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 5px;
+}
+.navbar_item:hover {
+  color: black;
+  transform: scale(1.1);
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+.navbar_item:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: black;
+  transform: scaleX(0);
+  transition: transform 0.6s ease;
+  transform-origin: left;
+}
+.navbar_item:hover:before {
+  transform: scaleX(1);
+}
+.navbar_item.active:before {
+  transform: scaleX(1);
+}
+.navbar_left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.navbar_wrapper {
+  margin: 0 auto;
+  width: 1250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar_logo {
+  width: 120px;
+  height: 30px;
+}
+.navbar_list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  transition: max-height 0.3s ease;
+  overflow: hidden;
+}
+.navbar_list.open {
+  display: flex;
+  flex-direction: column;
+  max-height: 300px;
+  background-color: #f8f8f8;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.navbar_toggle {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 35px;
+  height: 30px;
+}
+.navbar_toggle span {
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 5px 0;
+  background-color: #333;
+  transition: all 0.3s ease;
+}
+.navbar_toggle.open span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+.navbar_toggle.open span:nth-child(2) {
+  opacity: 0;
+}
+.navbar_toggle.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+@media (max-width: 768px) {
+  .navbar_toggle {
+    display: block;
+  }
+}
+.navbar_select {
+  padding: 7px 10px;
+  border-radius: 8px;
+  border: 1px solid grey;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .navbar_wrapper {
+    width: 90%;
+    padding: 20px;
+  }
+  .navbar_list {
+    gap: 30px;
+  }
+  .navbar_left {
+    gap: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar_logo {
+    width: 140px;
+  }
+  .navbar_list {
+    display: none;
+  }
+  .navbar_list.open {
+    display: flex;
+  }
+  .navbar_select {
+    width: 120%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  .navbar_wrapper {
+    width: 80%;
+  }
+  .navbar_logo {
+    width: 90px;
+  }
+  .navbar_list {
+    gap: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .navbar_wrapper {
+    width: 100%;
+  }
+  .navbar_logo {
+    width: 80px;
+  }
+  .navbar_list {
+    gap: 10px;
+  }
+}
+@media (max-width: 300px) {
+  .navbar_wrapper {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .navbar_logo {
+    width: 110px;
+    height: 40px;
+  }
+  .navbar_list {
+    gap: 5px;
+    font-size: 12px;
+  }
+  .navbar_select {
+    font-size: 12px;
+    width: 120%;
+  }
+  .navbar_left {
+    gap: 0;
+  }
+}
+
+@media (max-width: 1250px) {
+  .navbar_wrapper {
+    width: 90%;
+  }
+}/*# sourceMappingURL=navbar.css.map */

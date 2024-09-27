@@ -1,32 +1,73 @@
-import React, { useEffect } from "react";
-
+import React, { useState } from "react";
 import "../styles/contact.scss";
+import Aos from "aos";
+import axios from "axios";
 
 import icon1 from "../assets/img/icon5.svg";
 import icon2 from "../assets/img/icon6.svg";
 import icon3 from "../assets/img/icon7.svg";
-import Aos from "aos";
+import { toast } from "react-toastify";
 
 const Contact = () => {
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [message, setMessage] = useState("");
 
+  const token = "7232269128:AAHZIjx7GIn1Sr8A413W7VMysW4m24r1EJo";
+  const chatId = "6575316231";
+  const url = `https://api.telegram.org/bot${token}/sendMessage`;
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const text = `Yangi murojaat:\nEmail: ${email}\nTelefon: ${phone}\nXabar: ${message}`;
+
+    try {
+      await axios.post(url, {
+        chat_id: chatId,
+        text: text,
+      });
+      toast.success("Xabar yuborildi!");
+    } catch (error) {
+      console.error("Xatolik yuz berdi:", error);
+      toast.error("Xabar yuborilmadi, qayta urinib ko'ring.");
+    }
+  };
 
   Aos.init({
     duration: 200,
     easing: "ease-in-out",
-    once: false, 
+    once: false,
   });
-
 
   return (
     <div className="contact">
       <div className="contact_wrapper">
         <div className="contact_left">
           <h2 className="contact_title">Contact</h2>
-          <form data-aos="zoom-in">
-            <input type="email" required placeholder="Your E-mail" />
-            <input type="tel" required placeholder="Phone Number" />
-            <textarea placeholder=" Your Message Here" name="" id=""></textarea>
-            <button className="contact_btn">Submit</button>
+          <form onSubmit={handleSubmit} data-aos="zoom-in">
+            <input
+              type="email"
+              required
+              placeholder="Your E-mail"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <input
+              type="tel"
+              required
+              placeholder="Phone Number"
+              value={phone}
+              onChange={(e) => setPhone(e.target.value)}
+            />
+            <textarea
+              placeholder="Your Message Here"
+              required
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}></textarea>
+            <button type="submit" className="contact_btn">
+              Submit
+            </button>
           </form>
         </div>
         <div

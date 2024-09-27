@@ -1,0 +1,168 @@
+.gadjet_wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.gadjet_img {
+  width: 85%;
+  height: 520px;
+  border-radius: 20px;
+  margin-bottom: 50px;
+}
+.gadjet_span {
+  text-align: start;
+  color: #f42c37;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 23px;
+  margin-right: 20px;
+}
+.gadjet_subtext {
+  width: 75%;
+  color: black;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 23px;
+  margin-bottom: 20px;
+}
+.gadjet_text {
+  width: 75%;
+  font-family: "Poppins", sans-serif;
+  color: #000;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-bottom: 15px;
+}
+.gadjet_bottom {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gadjet_bottom_title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+}
+.gadjet_bottom_text {
+  font-size: 100%;
+  line-height: 1.5;
+  font-style: normal;
+  color: #444;
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+.gadjet_bottom form {
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.gadjet_bottom_input {
+  width: 47%;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  padding: 15px 20px;
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+  margin-bottom: 50px;
+}
+.gadjet_bottom_btn {
+  margin-top: 30px !important;
+}
+.gadjet_bottom textarea {
+  margin-top: 15px;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  height: 200px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  background-color: #f5f5f5;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Max width 1500px */
+@media (max-width: 1500px) {
+  .gadjet_img {
+    height: 480px;
+    margin-bottom: 45px;
+  }
+  .gadjet_subtext, .gadjet_text {
+    width: 80%;
+    font-size: 15px;
+  }
+}
+/* Max width 1000px */
+@media (max-width: 1000px) {
+  .gadjet_img {
+    height: 450px;
+  }
+  .gadjet_subtext, .gadjet_text {
+    width: 90%;
+  }
+  .gadjet_bottom {
+    margin-top: 120px;
+  }
+}
+/* Max width 768px */
+@media (max-width: 768px) {
+  .gadjet_img {
+    height: 400px;
+    width: 90%;
+  }
+  .gadjet_subtext, .gadjet_text {
+    width: 100%;
+  }
+  .gadjet_span {
+    font-size: 14px;
+  }
+}
+/* Max width 400px */
+@media (max-width: 400px) {
+  .gadjet_img {
+    height: 350px;
+  }
+  .gadjet_subtext, .gadjet_text {
+    font-size: 14px;
+  }
+  .gadjet_span {
+    font-size: 13px;
+  }
+  .gadjet_bottom_title {
+    font-size: 22px;
+  }
+}
+/* Max width 300px */
+@media (max-width: 300px) {
+  .gadjet_img {
+    height: 250px;
+  }
+  .gadjet_subtext, .gadjet_text {
+    font-size: 12px;
+  }
+  .gadjet_span {
+    font-size: 12px;
+  }
+  .gadjet_bottom_title {
+    font-size: 20px;
+  }
+}
+@media (max-width: 660px) {
+  .gadjet_bottom {
+    width: 100%;
+  }
+  .gadjet_bottom input {
+    width: 100%;
+  }
+  .gadjet_bottom input:last-child {
+    margin-left: 0 !important;
+  }
+}/*# sourceMappingURL=gadjets.css.map */

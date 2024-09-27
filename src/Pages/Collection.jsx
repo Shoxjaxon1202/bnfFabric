@@ -37,14 +37,15 @@ const Collection = ({ data }) => {
   };
 
   const handleSearchChange = (event) => {
-    setSearchTerm(event.target.value); // Qidirish so'zini yangilash
+    setSearchTerm(event.target.value);
   };
 
+  // filteredData ni to'g'ri joyda boshlang'ich qiymat bilan e'lon qilamiz
   let filteredData = selectedCategory
     ? base.filter((item) => item.category === selectedCategory)
     : base;
 
-  // Qidiruv natijalarini filtrlaymiz
+  // Qidiruv so'zi bo'lsa, unga qarab filtrlaymiz
   if (searchTerm) {
     filteredData = filteredData.filter((item) =>
       item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -60,17 +61,17 @@ const Collection = ({ data }) => {
     <div className="collection">
       <div className="collection_left">
         <div className="collection__subscribe">
-          <div className="collection__subscribe-form">
+          <form className="collection__subscribe-form">
             <input
               type="text"
               placeholder="Search here"
-              value={searchTerm} // Controlled component
-              onChange={handleSearchChange} // Kiritilgan matnni yangilash
+              value={searchTerm}
+              onChange={handleSearchChange}
             />
             <button className="collection_button">
               <Search className="collection_icon" />
             </button>
-          </div>
+          </form>
         </div>
 
         <Accordion className="collection_accordion" defaultExpanded>
@@ -114,6 +115,7 @@ const Collection = ({ data }) => {
           </AccordionDetails>
         </Accordion>
       </div>
+
       <div className="collection_right">
         <div className="collection_top">
           <div className="collection_top_left">
@@ -121,7 +123,7 @@ const Collection = ({ data }) => {
               {selectedCategory ? selectedCategory : "Collection"}
             </h3>
             <p className="collection_text">
-              Showing {(page - 1) * itemsPerPage + 1}–
+              Showing {(page - 1) * itemsPerPage + 1}–{" "}
               {Math.min(page * itemsPerPage, filteredData.length)} of{" "}
               {filteredData.length}
             </p>
@@ -130,6 +132,7 @@ const Collection = ({ data }) => {
             <button className="collection_btn">Initial Sorting</button>
           </div>
         </div>
+
         <div className="collection_cards">
           {paginatedData.length > 0 ? (
             paginatedData.map((item) => (
@@ -139,6 +142,7 @@ const Collection = ({ data }) => {
             <UndefinedProduct />
           )}
         </div>
+
         <Stack spacing={2}>
           <Pagination
             count={Math.ceil(filteredData.length / itemsPerPage)}

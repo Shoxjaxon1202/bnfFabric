@@ -64,10 +64,10 @@ const Footer = () => {
         </div>
         <div className="footer__subscribe">
           <h4>Subscribe to our email</h4>
-          <div className="footer__subscribe-form">
+          <form className="footer__subscribe-form">
             <input type="email" placeholder="Enter Your Email" />
             <button>Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>

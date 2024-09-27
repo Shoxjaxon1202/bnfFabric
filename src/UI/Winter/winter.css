@@ -1,0 +1,136 @@
+.winter {
+  width: 100%;
+  margin: 100px auto;
+}
+.winter_title {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+.winter_text {
+  margin: 0;
+  padding: 0;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 600;
+  opacity: 0.5;
+}
+.winter_cards {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 50px;
+}
+.winter_card {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease;
+}
+.winter_card:hover {
+  transform: scale(0.95); /* Scales down the entire card */
+}
+.winter_card:hover .winter_img {
+  height: 95% !important;
+  transition: height 0.3s ease, transform 0.3s ease;
+  transform: scale(0.95); /* Scale down the image */
+}
+.winter_card:hover .winter_subtitle {
+  color: #ff0000 !important;
+  transition: color 0.3s ease, transform 0.3s ease;
+  transform: scale(0.95); /* Scale down the subtitle */
+}
+.winter_img {
+  border-radius: 20px;
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+.winter_subtitle {
+  color: rgb(54, 54, 248);
+  transition: color 0.3s ease, transform 0.3s ease;
+  font-size: 1.17em;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+@media (max-width: 1500px) {
+  .winter {
+    margin: 50px auto;
+  }
+  .winter_title {
+    font-size: 2.5rem;
+  }
+  .winter_text {
+    font-size: 0.9rem;
+  }
+  .winter_cards {
+    gap: 30px;
+  }
+  .winter_card {
+    width: 180px;
+  }
+  .winter_subtitle {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 768px) {
+  .winter {
+    margin: 30px auto;
+  }
+  .winter_title {
+    font-size: 2.2rem;
+  }
+  .winter_text {
+    font-size: 0.85rem;
+  }
+  .winter_cards {
+    gap: 20px;
+  }
+  .winter_card {
+    width: 160px;
+  }
+  .winter_subtitle {
+    font-size: 0.95rem;
+  }
+}
+@media (max-width: 480px) {
+  .winter {
+    margin: 20px auto;
+  }
+  .winter_title {
+    font-size: 2rem;
+  }
+  .winter_text {
+    font-size: 0.8rem;
+  }
+  .winter_cards {
+    gap: 15px;
+  }
+  .winter_card {
+    width: 150px;
+  }
+  .winter_subtitle {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 400px) {
+  .winter {
+    margin: 50px auto;
+  }
+  .winter_cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .winter_card {
+    margin: auto;
+    width: 80%;
+  }
+}/*# sourceMappingURL=winter.css.map */

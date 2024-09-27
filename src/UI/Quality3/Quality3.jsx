@@ -3,6 +3,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import bedImage from "../../assets/img/collectionImg3.png";
+import { NavLink } from "react-router-dom";
 
 const Quality3 = () => {
   AOS.init({
@@ -27,7 +28,9 @@ const Quality3 = () => {
           has been a company that produces cotton fabrics for use all over the
           world for many years
         </p>
-        <button className="quality_btn3">COLLECTION</button>
+        <NavLink to={"/collection"}>
+          <button className="quality_btn3">COLLECTION</button>
+        </NavLink>
       </div>
     </div>
   );
