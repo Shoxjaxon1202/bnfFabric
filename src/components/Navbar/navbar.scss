@@ -75,10 +75,11 @@
       max-height: 300px; // Menyu ochilgan holat
       background-color: #f8f8f8;
       position: absolute;
-      top: 10%; // Menyu o'z joyidan pastda ko'rsatiladi
+      top: 15%; // Menyu o'z joyidan pastda ko'rsatiladi
       left: 0;
       right: 0;
       z-index: 1;
+      padding: 30px 0;
     }
   }
 
@@ -177,7 +178,7 @@
     }
   }
 
-  @media (max-width: 300px) {
+  @media (max-width: 350px) {
     &_wrapper {
       width: 100%;
       padding: 0 15px;
@@ -196,6 +197,12 @@
     }
     &_left {
       gap: 0;
+    }
+    .navbar_list.open {
+      top: 10%;
+    }
+    .navbar_toggle {
+      margin-left: 20px;
     }
   }
 }

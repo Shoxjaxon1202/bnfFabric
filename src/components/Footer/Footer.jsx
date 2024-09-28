@@ -28,17 +28,23 @@ const Footer = () => {
         <div className="footer__menu">
           <h4>menu</h4>
           <ul>
-            <li>
-              <NavLink to="/home">Home</NavLink>
+            <li className="navbar_item">
+              <NavLink className={"navbar_link"} to="/home">
+                Home
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="aboutUs">About Us</NavLink>
+            <li className="navbar_item">
+              <NavLink className={"navbar_link"} to="aboutUs">
+                About Us
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/collection">Collection</NavLink>
+            <li className="navbar_item">
+              <NavLink className={"navbar_link"} to="/collection">
+                Collection
+              </NavLink>
             </li>
-            <li>
-              <NavLink to="/contact" className="active">
+            <li className="navbar_item">
+              <NavLink className={"navbar_link active"} to="/contact">
                 Contacts
               </NavLink>
             </li>

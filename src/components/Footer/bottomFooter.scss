@@ -42,6 +42,9 @@
 // Kichik ekranlar uchun (768px dan kichik)
 @media (max-width: 768px) {
   .BottomFooter_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 95%; // Kenglikni 95% qilib belgiladik kichik ekranlar uchun
     padding: 10px 15px;
   }

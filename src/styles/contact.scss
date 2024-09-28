@@ -164,6 +164,13 @@
     &_box {
       width: 100%;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    &_textbox{
+      display: flex;
+      align-content: center;
+      justify-content: center;
     }
     &_title {
       font-size: 28px;
@@ -172,7 +179,7 @@
 }
 
 /* Max width 400px */
-@media (max-width: 400px) {
+@media (max-width: 560px) {
   .contact {
     &_wrapper {
       gap: 30px;

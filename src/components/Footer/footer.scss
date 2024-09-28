@@ -196,6 +196,24 @@
     flex-direction: column; // Flex yo'nalishini ustun qilib o'zgartirish
     align-items: flex-start; // O'ng tomonga yo'nalish
   }
+  .footer__description {
+    text-align: center;
+  }
+  .footer__menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .footer__menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    // flex-direction: column;
+  }
   .footer__logo {
     width: 100%;
   }
@@ -290,27 +308,40 @@
 
 @media (max-width: 768px) {
   .footer {
+    &__contacts{
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 7px;
+    }
     &_wrapper {
       width: 100%; // Kenglikni 100% qilib qo'yamiz
       padding: 0 15px; // Chetidan padding qo'shamiz
       flex-direction: column; // Flex yo'nalishini ustun qilib o'zgartirish
-      align-items: flex-start; // O'ng tomonga yo'nalish
+      align-items: center; // O'ng tomonga yo'nalish
     }
 
     &__logo {
       width: 100%; // Kichik ekranlar uchun logo kengligini 100% qilib qo'yamiz
     }
-
-    &__subscribe-form input {
+    &__subscribe{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    // &__subscribe-form input {
       // flex-direction: column; // Subscribe-forma uchun ustun yo'nalishi
       // max-width: 55%; // Kenglikni 100% qilish
-    }
+    // }
 
     &__menu,
     &__contacts,
     &__subscribe {
       h4 {
-        font-size: 14px; // Sarlavhalar uchun kichikroq shrift
+        font-size: 16px; // Sarlavhalar uchun kichikroq shrift
       }
 
       ul {
@@ -319,5 +350,13 @@
         }
       }
     }
+  }
+}
+
+
+
+@media (max-width: 500px){
+  .footer__menu ul{
+    gap: 20px;
   }
 }

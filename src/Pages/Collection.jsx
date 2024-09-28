@@ -145,6 +145,7 @@ const Collection = ({ data }) => {
 
         <Stack spacing={2}>
           <Pagination
+            className="pagination"
             count={Math.ceil(filteredData.length / itemsPerPage)}
             page={page}
             onChange={handleChange}
