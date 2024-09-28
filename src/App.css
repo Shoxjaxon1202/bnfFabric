@@ -19,11 +19,11 @@ li {
   min-height: 45vh;
 
   @media (min-width: 1024px) {
-    width: 80%;
+    width: 95%;
   }
 
   @media (min-width: 1200px) {
-    width: 100%;
+    width: 88%;
   }
 
   @media (min-width: 1500px) {

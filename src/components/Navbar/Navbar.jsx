@@ -16,10 +16,19 @@ const Navbar = () => {
     }
   };
 
+  const handleResize = () => {
+    if (window.innerWidth > 768) {
+      setIsOpen(false); // 768px dan katta bo'lsa menyuni yopamiz
+    }
+  };
+
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
+    window.addEventListener("resize", handleResize); // O'lcham o'zgarishini kuzatamiz
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
+      window.removeEventListener("resize", handleResize); // O'chirishni unutmang
     };
   }, [isOpen]);
 
@@ -30,7 +39,6 @@ const Navbar = () => {
           <NavLink to="/home">
             <img src={logo} alt="Logo" className="navbar_logo" />
           </NavLink>
-          {/* Navbar list with toggling visibility */}
           <ul className={`navbar_list ${isOpen ? "open" : ""}`}>
             <NavLink to="/home" className="navbar_link">
               <li className="navbar_item">Home</li>

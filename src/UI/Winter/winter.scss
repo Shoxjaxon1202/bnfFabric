@@ -61,27 +61,54 @@
   }
 }
 
-// @media (max-width: 1500px) {
-//   .winter {
-//     margin: 50px auto;
-//     &_title {
-//       font-size: 2.5rem;
-//     }
-//     &_text {
-//       font-size: 0.9rem;
-//     }
-//     &_cards {
-//       gap: 30px;
-//     }
-//     &_card {
-//       width: 180px;
-//     }
-//     &_subtitle {
-//       font-size: 1rem;
-//     }
-//   }
-// }
+@media (max-width: 1500px) {
+  .winter {
+    margin: 50px auto;
+    &_title {
+      font-size: 2.5rem;
+    }
+    &_text {
+      font-size: 0.9rem;
+    }
+    &_cards {
+      // gap: 20px;
+      flex-wrap: wrap;
+    }
+    &_card {
+      width: 180px;
+    }
+    &_subtitle {
+      font-size: 1rem;
+    }
+  }
+}
 
+@media (max-width: 1024px) {
+  .winter {
+    margin: 60px auto;
+    &_title {
+      font-size: 2.2rem;
+    }
+    &_text {
+      font-size: 0.85rem;
+    }
+    &_cards {
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+    &_card {
+      width: 100%;
+    }
+    &_subtitle {
+      font-size: 0.95rem;
+    }
+    &_img {
+      width: 100%;
+    }
+  }
+}
 @media (max-width: 768px) {
   .winter {
     margin: 30px auto;
@@ -103,7 +130,7 @@
     &_subtitle {
       font-size: 0.95rem;
     }
-    &_img{
+    &_img {
       width: 100%;
     }
   }
@@ -130,17 +157,32 @@
   }
 }
 
-@media (max-width: 400px){
-  .winter{
+@media (max-width: 400px) {
+  .winter {
     margin: 50px auto;
-    &_cards{
+    &_cards {
       display: flex;
       align-items: center;
       justify-content: center;
     }
-    &_card{
+    &_card {
       margin: auto;
       width: 80%;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .winter {
+    &_cards{
+      width: 100%;
+      flex-direction: column;
+    }
+    &_card {
+      width: 100%;
+    }
+    a{
+      width: 85%;
     }
   }
 }

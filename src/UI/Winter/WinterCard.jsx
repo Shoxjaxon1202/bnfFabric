@@ -10,7 +10,7 @@ const WinterCard = ({ img, name, id }) => {
   });
   
   return (
-    <NavLink to={`/Item/${id}`}>
+    <NavLink className={"winter_link"} to={`/Item/${id}`}>
       <div data-aos="fade-right" className="winter_card">
         <img src={img} alt="" className="winter_img" />
         <h4 className="winter_subtitle">{name}</h4>

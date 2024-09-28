@@ -126,15 +126,15 @@
 
   // Sizning media querylaringiz:
   @media (max-width: 1024px) {
-    &_wrapper {
-      width: 90%;
-      padding: 20px;
+    &_logo {
+      width: 140px;
     }
-    &_list {
-      gap: 30px;
+    &_list{
+      width: 100%;
     }
-    &_left {
-      gap: 30px;
+    &_select {
+      width: 120%;
+      font-size: 14px;
     }
   }
 
