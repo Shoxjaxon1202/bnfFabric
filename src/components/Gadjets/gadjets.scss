@@ -96,20 +96,20 @@
   }
 }
 
-/* Max width 1500px */
-@media (max-width: 1500px) {
-  .gadjet {
-    &_img {
-      height: 480px;
-      margin-bottom: 45px;
-    }
-    &_subtext,
-    &_text {
-      width: 80%;
-      font-size: 15px;
-    }
-  }
-}
+// /* Max width 1500px */
+// @media (max-width: 1500px) {
+//   .gadjet {
+//     &_img {
+//       height: 480px;
+//       margin-bottom: 45px;
+//     }
+//     &_subtext,
+//     &_text {
+//       width: 80%;
+//       font-size: 15px;
+//     }
+//   }
+// }
 
 /* Max width 1000px */
 @media (max-width: 1000px) {
@@ -141,6 +141,9 @@
     &_span {
       font-size: 14px;
     }
+    .gadjet_bottom_text {
+      text-align: center;
+    }
   }
 }
 
@@ -154,6 +157,11 @@
     &_text {
       font-size: 14px;
     }
+    .gadjet_subtext {
+      width: 100%;
+      text-align: center !important;
+      margin: auto;
+    }
     &_span {
       font-size: 13px;
     }
@@ -164,7 +172,7 @@
 }
 
 /* Max width 300px */
-@media (max-width: 300px) {
+@media (max-width: 350px) {
   .gadjet {
     &_img {
       height: 250px;
@@ -182,16 +190,14 @@
   }
 }
 
-
-@media (max-width: 660px){
-  .gadjet{
-    
-    &_bottom{
+@media (max-width: 660px) {
+  .gadjet {
+    &_bottom {
       width: 100%;
-      input{
+      input {
         width: 100%;
       }
-      input:last-child{
+      input:last-child {
         margin-left: 0 !important;
       }
     }
