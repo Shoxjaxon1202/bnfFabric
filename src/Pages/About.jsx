@@ -1,63 +1,26 @@
 import React from "react";
-
 import img from "../assets/img/about.png";
-
 import "../styles/about.scss";
+import { useTranslation } from "react-i18next"; // Tarjima uchun i18next
+
 const About = () => {
+  const { t } = useTranslation(); // Tarjima funksiyasi
+
   return (
     <div className="about">
       <div className="about_left">
-        <h2 className="about_title">Bukhara Natural Product</h2>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsOur factory
-          has been a company that produces cotton fabrics for use all over the
-          world for many years.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThis company
-          has been serving customers for 17 years.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThe main goal
-          of this company is to produce high quality and cost effective
-          products.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThe production
-          process of this company is completely environmentally friendly.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThe company
-          can produce any kind of cotton raw materials according to the
-          requirements and suggestions of customers.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsThe company is
-          the official dealer of DongJia weaving machines in Uzbekistan.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsCurrently,
-          more than 80 families contribute to the prestige and success of the
-          company by providing financial support for their families.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsTo meet this
-          demand, 50 weaving machines operate at high speed, non-stop.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsWe have the
-          capacity to weave 200-250,000 meters of fabric per month.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsIn line with
-          the high demand of our customers, the company has now established the
-          production of high-quality premium eco-bags.
-        </p>
-        <p className="about_text">
-          Buxoro matolari, Eco sumkalar, Bukhara fabrics, Eco bagsBukhara
-          Natural Product Company is pleased to serve its regular customers at
-          any time.
-        </p>
+        <h2 className="about_title">{t("about.title")}</h2>
+        <p className="about_text">{t("about.text1")}</p>
+        <p className="about_text">{t("about.text2")}</p>
+        <p className="about_text">{t("about.text3")}</p>
+        <p className="about_text">{t("about.text4")}</p>
+        <p className="about_text">{t("about.text5")}</p>
+        <p className="about_text">{t("about.text6")}</p>
+        <p className="about_text">{t("about.text7")}</p>
+        <p className="about_text">{t("about.text8")}</p>
+        <p className="about_text">{t("about.text9")}</p>
+        <p className="about_text">{t("about.text10")}</p>
+        <p className="about_text">{t("about.text11")}</p>
       </div>
       <div className="about_right">
         <img src={img} alt="" className="about_img" />

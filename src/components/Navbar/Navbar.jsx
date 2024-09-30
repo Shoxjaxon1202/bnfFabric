@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/img/logo.png";
+import { useTranslation } from "react-i18next"; // useTranslation ni import qiling
 import "./navbar.scss";
+import i18n from "../../i18";
 
 const Navbar = () => {
+  const { t } = useTranslation(); // Tarjimani olish
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -18,19 +21,23 @@ const Navbar = () => {
 
   const handleResize = () => {
     if (window.innerWidth > 768) {
-      setIsOpen(false); // 768px dan katta bo'lsa menyuni yopamiz
+      setIsOpen(false);
     }
   };
 
   useEffect(() => {
     document.addEventListener("click", handleClickOutside);
-    window.addEventListener("resize", handleResize); // O'lcham o'zgarishini kuzatamiz
+    window.addEventListener("resize", handleResize);
 
     return () => {
       document.removeEventListener("click", handleClickOutside);
-      window.removeEventListener("resize", handleResize); // O'chirishni unutmang
+      window.removeEventListener("resize", handleResize);
     };
   }, [isOpen]);
+
+  const changeLanguage = (event) => {
+    i18n.changeLanguage(event.target.value); // Tilni o'zgartirish
+  };
 
   return (
     <nav className="navbar">
@@ -41,25 +48,24 @@ const Navbar = () => {
           </NavLink>
           <ul className={`navbar_list ${isOpen ? "open" : ""}`}>
             <NavLink to="/home" className="navbar_link">
-              <li className="navbar_item">Home</li>
+              <li className="navbar_item">{t("navbar.home")}</li>
             </NavLink>
             <NavLink to="/collection" className="navbar_link">
-              <li className="navbar_item">Collection</li>
+              <li className="navbar_item">{t("navbar.collection")}</li>
             </NavLink>
             <NavLink to="/about" className="navbar_link">
-              <li className="navbar_item">About Us</li>
+              <li className="navbar_item">{t("navbar.aboutUs")}</li>
             </NavLink>
             <NavLink to="/contact" className="navbar_link">
-              <li className="navbar_item">Contacts</li>
+              <li className="navbar_item">{t("navbar.contacts")}</li>
             </NavLink>
           </ul>
         </div>
         <div className="navbar_right">
-          <select className="navbar_select">
+          <select className="navbar_select" onChange={changeLanguage}>
             <option value="en">EN</option>
             <option value="ru">RU</option>
             <option value="uz">UZ</option>
-            <option value="pl">PL</option>
           </select>
         </div>
         <div

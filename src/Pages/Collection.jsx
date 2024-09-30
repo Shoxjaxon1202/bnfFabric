@@ -15,12 +15,14 @@ import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import UndefinedProduct from "./Undefind";
+import { useTranslation } from "react-i18next"; // Tarjimalarni olish
 
 const Collection = ({ data }) => {
+  const { t } = useTranslation(); // i18next dan tarjima funksiyasini olish
   const [base, setBase] = useState([]);
   const [page, setPage] = useState(1);
   const [selectedCategory, setSelectedCategory] = useState("");
-  const [searchTerm, setSearchTerm] = useState(""); // Qidirish so'zini saqlash uchun
+  const [searchTerm, setSearchTerm] = useState("");
   const itemsPerPage = 8;
 
   useEffect(() => {
@@ -40,12 +42,10 @@ const Collection = ({ data }) => {
     setSearchTerm(event.target.value);
   };
 
-  // filteredData ni to'g'ri joyda boshlang'ich qiymat bilan e'lon qilamiz
   let filteredData = selectedCategory
     ? base.filter((item) => item.category === selectedCategory)
     : base;
 
-  // Qidiruv so'zi bo'lsa, unga qarab filtrlaymiz
   if (searchTerm) {
     filteredData = filteredData.filter((item) =>
       item.name.toLowerCase().includes(searchTerm.toLowerCase())
@@ -64,7 +64,7 @@ const Collection = ({ data }) => {
           <form className="collection__subscribe-form">
             <input
               type="text"
-              placeholder="Search here"
+              placeholder={t("collection.search")} // "Search here" tarjimasi
               value={searchTerm}
               onChange={handleSearchChange}
             />
@@ -80,7 +80,7 @@ const Collection = ({ data }) => {
             aria-controls="panel1-content"
             id="panel1-header">
             <Typography className="collection_accordion_title">
-              Collection
+              {t("collection.title")} {/* "Collection" tarjimasi */}
             </Typography>
           </AccordionSummary>
           <AccordionDetails className="collection_accordion_menus">
@@ -89,28 +89,28 @@ const Collection = ({ data }) => {
                 selectedCategory === "Spring collection" ? "active" : ""
               }`}
               onClick={() => handleCategorySelect("Spring collection")}>
-              Spring Collection
+              {t("collection.spring")} {/* "Spring Collection" tarjimasi */}
             </Typography>
             <Typography
               className={`collection_accordion_menu ${
                 selectedCategory === "Winter collection" ? "active" : ""
               }`}
               onClick={() => handleCategorySelect("Winter collection")}>
-              Winter Collection
+              {t("collection.winter")} {/* "Winter Collection" tarjimasi */}
             </Typography>
             <Typography
               className={`collection_accordion_menu ${
                 selectedCategory === "Summer collection" ? "active" : ""
               }`}
               onClick={() => handleCategorySelect("Summer collection")}>
-              Summer Collection
+              {t("collection.summer")} {/* "Summer Collection" tarjimasi */}
             </Typography>
             <Typography
               className={`collection_accordion_menu ${
                 selectedCategory === "Autumn collection" ? "active" : ""
               }`}
               onClick={() => handleCategorySelect("Autumn collection")}>
-              Autumn Collection
+              {t("collection.autumn")} {/* "Autumn Collection" tarjimasi */}
             </Typography>
           </AccordionDetails>
         </Accordion>
@@ -120,16 +120,21 @@ const Collection = ({ data }) => {
         <div className="collection_top">
           <div className="collection_top_left">
             <h3 className="collection_title">
-              {selectedCategory ? selectedCategory : "Collection"}
+              {selectedCategory
+                ? t(`collection.${selectedCategory.toLowerCase()}`)
+                : t("collection.title")}
             </h3>
             <p className="collection_text">
-              Showing {(page - 1) * itemsPerPage + 1}–{" "}
-              {Math.min(page * itemsPerPage, filteredData.length)} of{" "}
-              {filteredData.length}
+              {t("collection.showing")} {(page - 1) * itemsPerPage + 1}–{" "}
+              {Math.min(page * itemsPerPage, filteredData.length)}{" "}
+              {t("collection.of")} {filteredData.length}
             </p>
           </div>
           <div className="collection_top_right">
-            <button className="collection_btn">Initial Sorting</button>
+            <button className="collection_btn">
+              {t("collection.sorting")}
+            </button>{" "}
+            {/* "Initial Sorting" tarjimasi */}
           </div>
         </div>
 

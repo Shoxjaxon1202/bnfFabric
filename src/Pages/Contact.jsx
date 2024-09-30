@@ -1,14 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/contact.scss";
 import Aos from "aos";
 import axios from "axios";
+import { useTranslation } from "react-i18next";
+import { toast } from "react-toastify";
 
 import icon1 from "../assets/img/icon5.svg";
 import icon2 from "../assets/img/icon6.svg";
 import icon3 from "../assets/img/icon7.svg";
-import { toast } from "react-toastify";
 
 const Contact = () => {
+  const { t } = useTranslation(); // Tarjima funksiyasini olish
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
   const [message, setMessage] = useState("");
@@ -27,46 +29,49 @@ const Contact = () => {
         chat_id: chatId,
         text: text,
       });
-      toast.success("Xabar yuborildi!");
+      toast.success(t("contact.messageSent")); // Tarjima qo'shildi
     } catch (error) {
       console.error("Xatolik yuz berdi:", error);
-      toast.error("Xabar yuborilmadi, qayta urinib ko'ring.");
+      toast.error(t("contact.messageNotSent")); // Tarjima qo'shildi
     }
   };
 
-  Aos.init({
-    duration: 200,
-    easing: "ease-in-out",
-    once: false,
-  });
+  useEffect(() => {
+    Aos.init({
+      duration: 200,
+      easing: "ease-in-out",
+      once: false,
+    });
+  }, []);
 
   return (
     <div className="contact">
       <div className="contact_wrapper">
         <div className="contact_left">
-          <h2 className="contact_title">Contact</h2>
+          <h2 className="contact_title">{t("contact.title")}</h2>{" "}
+          {/* Tarjima qo'shildi */}
           <form onSubmit={handleSubmit} data-aos="zoom-in">
             <input
               type="email"
               required
-              placeholder="Your E-mail"
+              placeholder={t("contact.placeholderEmail")} // Tarjima qo'shildi
               value={email}
               onChange={(e) => setEmail(e.target.value)}
             />
             <input
               type="tel"
               required
-              placeholder="Phone Number"
+              placeholder={t("contact.placeholderPhone")} // Tarjima qo'shildi
               value={phone}
               onChange={(e) => setPhone(e.target.value)}
             />
             <textarea
-              placeholder="Your Message Here"
+              placeholder={t("contact.placeholderMessage")} // Tarjima qo'shildi
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}></textarea>
             <button type="submit" className="contact_btn">
-              Submit
+              {t("contact.submit")} {/* Tarjima qo'shildi */}
             </button>
           </form>
         </div>
@@ -95,14 +100,16 @@ const Contact = () => {
         <div className="contact_box">
           <img src={icon1} alt="" className="contact_img" />
           <div className="contact_textbox">
-            <h5 className="contact_subtitle">Email: </h5>
+            <h5 className="contact_subtitle">{t("contact.email")}</h5>{" "}
+            {/* Tarjima qo'shildi */}
             <p className="contact_subtext">info@bnpfabric.uz</p>
           </div>
         </div>
         <div className="contact_box">
           <img src={icon2} alt="" className="contact_img" />
           <div className="contact_textbox">
-            <h5 className="contact_subtitle">Tel: </h5>
+            <h5 className="contact_subtitle">{t("contact.phone")}</h5>{" "}
+            {/* Tarjima qo'shildi */}
             <p className="contact_subtext">+998 93 383 75 85</p>
             <p className="contact_subtext">+998 93 960 78 00</p>
           </div>
@@ -110,7 +117,8 @@ const Contact = () => {
         <div className="contact_box">
           <img src={icon3} alt="" className="contact_img" />
           <div className="contact_textbox">
-            <h5 className="contact_subtitle">Address: </h5>
+            <h5 className="contact_subtitle">{t("contact.address")}</h5>{" "}
+            {/* Tarjima qo'shildi */}
             <p className="contact_subtext">Bukhara, st. Alpomysh 80</p>
           </div>
         </div>

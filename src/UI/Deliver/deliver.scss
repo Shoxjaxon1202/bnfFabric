@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 15px;
   }
   &_card {
     max-height: 60px;
@@ -29,11 +30,11 @@
   }
   &_title {
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 0.9rem;
     color: #000;
   }
   &_text {
-    font-size: 0.8rem;
+    font-size: 0.7rem;
     font-weight: 500;
     color: gray;
     letter-spacing: 1px;
