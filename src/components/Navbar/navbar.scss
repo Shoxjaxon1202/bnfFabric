@@ -13,7 +13,7 @@
     position: relative;
     overflow: hidden; // Overflow-ni yashirish uchun
     padding-bottom: 5px; // Chiziq uchun joy qo'shamiz
-
+    padding-left: 5px;
     &:hover {
       color: black; // Hoverda rangni o'zgartirish
       transform: scale(1.1); // Hover holatida kattalashish
@@ -129,7 +129,7 @@
     &_logo {
       width: 140px;
     }
-    &_list{
+    &_list {
       width: 100%;
     }
     &_select {
@@ -141,6 +141,9 @@
   @media (max-width: 768px) {
     &_logo {
       width: 140px;
+    }
+    .navbar_list.open {
+      top: 0%;
     }
     &_list {
       display: none; // 768px dan kichik ekranda menyu yashiriladi
@@ -159,7 +162,8 @@
       width: 80%;
     }
     &_logo {
-      width: 90px;
+      width: 150px;
+      height: 40px;
     }
     &_list {
       gap: 15px;
@@ -171,7 +175,7 @@
       width: 100%;
     }
     &_logo {
-      width: 80px;
+      width: 140px;
     }
     &_list {
       gap: 10px;
@@ -207,10 +211,34 @@
   }
 }
 
-@media (max-width: 1250px) {
+@media (max-width: 1200px) {
   .navbar {
     &_wrapper {
-      width: 90%;
+      width: 90% !important;
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  .navbar {
+    &_wrapper {
+      width: 82%;
+    }
+  }
+}
+
+@media (min-width: 2001px) {
+  .navbar {
+    &_wrapper {
+      width: 83%;
+    }
+  }
+}
+
+@media (max-width: 1500px) {
+  .navbar {
+    &_wrapper {
+      width: 83%;
     }
   }
 }

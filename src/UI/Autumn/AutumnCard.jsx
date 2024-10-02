@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const AutumnCard = ({ img, name , id }) => {
   Aos.init({
-    duration: 1400,
+    duration: 700,
     easing: "ease-in-out",
     once: false,
   });

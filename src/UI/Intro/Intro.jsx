@@ -11,7 +11,7 @@ const Intro = () => {
 
   useEffect(() => {
     AOS.init({
-      duration: 1000, // Animatsiya davomiyligi (ms)
+      duration: 500, // Animatsiya davomiyligi (ms)
     });
   }, []);
 

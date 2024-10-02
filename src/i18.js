@@ -124,6 +124,32 @@ i18n
             messageSent: "Message sent!",
             messageNotSent: "Message not sent, please try again.",
           },
+
+          gadget: {
+            comment: "Leave a comment",
+            emailPlaceholder: "Email (required)",
+            websitePlaceholder: "Website",
+            commentPlaceholder: "Comment",
+            notPublished:
+              "Your email address will not be published. Required fields are marked with *",
+            messageSent: "Message sent!",
+            error: "Invalid email, website, or message.",
+            messageNotSent: "Message not sent, please try again.",
+            button: "Send",
+            articleText1:
+              "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I describe these conceptions, could impress upon paper all that is living so full and warm within me, that it might be the mirror of my soul, as my soul is the mirror of the infinite God!",
+            articleText2:
+              "O my friend - but it is too much for my strength - I sink under the weight of the splendour of these visions! A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine.",
+            articleText3:
+              "I am so happy, my dear friend, so absorbed in the exquisite sense of mere tranquil existence, that I neglect my talents. I should be incapable of drawing a single stroke at the present moment; and yet I feel that I never was a greater artist than now.",
+            articleText4:
+              "When, while the lovely valley teems with vapour around me, and the meridian sun strikes the upper surface of the impenetrable foliage of my trees, and but a few stray gleams steal into the inner sanctuary, I throw myself down among the tall grass by the trickling stream; and, as I lie close to the earth, a thousand unknown plants are noticed by me: when I hear the buzz of the little world among the stalks, and grow familiar with the countless indescribable forms of the insects and flies, then I feel the presence of the Almighty, who formed us in his own image, and the breath of that universal love which bears and sustains us, as it floats around us in an eternity of bliss; and then, my friend, when darkness overspreads my eyes, and heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I describe these conceptions, could impress upon paper all that is living so full and warm within me.",
+          },
+          articleText: [
+            "When, while the beautiful valley is full of mist around me, and the meridian sun lights up the upper surface of the impenetrable foliage of my trees, and only a few random rays penetrate into the inner sanctuary, I throw myself on the high grass by the murmuring stream; and when I lie close to the ground, I notice a thousand unknown plants: when I hear the buzzing of a small world among the stems and get used to the countless indescribable forms of insects and flies, then I feel the presence of the Almighty, who created us in His image, and the breath of this universal love that carries and sustains us as it hovers around us in the eternity of bliss; and then, my friend, when darkness covers my eyes, and heaven and earth seem to live in my soul and absorb its strength like the form of a beloved mistress, then I often think with longing: oh, how I wish I could describe these concepts, could I capture on paper all that lives so fully and warmly inside me.",
+            "Oh, my friend - but this is too much for my strength - I am drowning under the weight of the magnificence of these visions! A wonderful peace has seized my whole soul, like these sweet morning springs that I enjoy with all my heart. I am alone, and feel the charm of existence in this place that was created for the bliss of souls like mine.",
+            "I am so happy, my dear friend, so absorbed in the exquisite feeling of simple peaceful life, that I neglect my talents. I am unable to make a single stroke at the moment; and yet I feel that I have never been a better artist than now.",
+          ],
         },
       },
       ru: {
@@ -244,6 +270,33 @@ i18n
             messageSent: "Сообщение отправлено!",
             messageNotSent: "Сообщение не отправлено, попробуйте еще раз.",
           },
+          gadget: {
+            comment: "Оставить комментарий",
+            emailPlaceholder: "Электронная почта (обязательно)",
+            websitePlaceholder: "Веб-сайт",
+            commentPlaceholder: "Комментарий",
+            notPublished:
+              "Ваш адрес электронной почты не будет опубликован. Обязательные поля отмечены *.",
+            messageSent: "Сообщение отправлено!",
+            error: "Неверная электронная почта, веб-сайт или сообщение.",
+            messageNotSent:
+              "Сообщение не отправлено, пожалуйста, попробуйте еще раз.",
+            button: "Отправить",
+            articleText1:
+              "Когда прекрасная долина вокруг меня наполнялась паром, и солнце меридиана освещало верхнюю поверхность острых листьев моих деревьев, и лишь несколько случайных лучей проникают во внутреннюю святость, я бросаюсь в высокий травянистый поток; и когда я лежу близко к земле, я замечаю тысячи незнакомых растений: когда я слышу шум маленького мира между ручками и привыкаю к неописуемым формам, как насекомые и кошки, я ощущаю присутствие Бога, который создал нас по своему образу, и это общее дыхание любви, поднимающее нас и поддерживающее, летящее в вечности, чтобы сделать нас счастливыми; и затем, друг мой, когда мои темные глаза обвивают, и небо и земля как будто поселились в моей душе, поглощая свою силу, в форме моей любимой, я думаю, о, если бы я мог описать эти представления, записать их на бумаге, все, что заставляет меня чувствовать себя так полным и теплым, чтобы это стало проявлением моей души, потому что моя душа является бесконечным проявлением Бога.",
+            articleText2:
+              "О, друг мой - но это слишком много для моей силы - я испытываю давление роскоши этой мысли! Удивительный покой охватил всю мою душу, как сладкие дни весны, я наслаждаюсь ими всем сердцем. Я одинок, и я чувствую привлекательность процесса существования в этом месте, созданного для душ, подобных мне.",
+            articleText3:
+              "Я так счастлив, дорогой друг, так погруженный в ощущение тихого существования, что игнорирую свои способности. В данный момент мне трудно провести какую-либо линию; и все же я никогда не чувствую себя великим художником в текущий момент.",
+            articleText4:
+              "Когда прекрасная долина вокруг меня наполнялась паром, и солнце меридиана освещало верхнюю поверхность острых листьев моих деревьев, и лишь несколько случайных лучей проникают во внутреннюю святость, я бросаюсь в высокий травянистый поток; и когда я лежу близко к земле, я замечаю тысячи незнакомых растений: когда я слышу шум маленького мира между ручками и привыкаю к неописуемым формам, как насекомые и кошки, я ощущаю присутствие Бога.",
+          },
+
+          articleText: [
+            "Когда, пока прекрасная долина полна пара вокруг меня, и меридианный солнце освещает верхнюю поверхность непроницаемой листвы моих деревьев, и лишь несколько случайных лучей проникают во внутреннее святилище, я бросаюсь на высокую траву у журчащего потока; и, когда я лежу близко к земле, я замечаю тысячу неизвестных растений: когда я слышу жужжание маленького мира среди стеблей и привыкаю к бесчисленным неописуемым формам насекомых и мух, тогда я ощущаю присутствие Всемогущего, который создал нас по своему образу, и дыхание этой универсальной любви, которая несет и поддерживает нас, как она парит вокруг нас в вечности блаженства; и тогда, мой друг, когда темнота покрывает мои глаза, и небеса и земля, кажется, живут в моей душе и поглощают ее силу, как форма любимой любовницы, тогда я часто думаю с тоской: о, как бы мне описать эти концепции, мог бы я запечатлеть на бумаге все, что живет так полно и тепло внутри меня.",
+            "О, мой друг - но это слишком много для моей силы - я тоню под тяжестью великолепия этих видений! Чудесный покой овладел всей моей душой, как эти сладкие утренние весны, которые я наслаждаюсь всем сердцем. Я один, и чувствую очарование существования в этом месте, которое было создано для блаженства душ, подобных моей.",
+            "Я так счастлив, мой дорогой друг, так поглощен изысканным ощущением простой спокойной жизни, что пренебрегаю своими талантами. Я не способен провести ни одного штриха в данный момент; и все же я чувствую, что никогда не был лучшим художником, чем сейчас.",
+          ],
         },
       },
       uz: {
@@ -366,6 +419,32 @@ i18n
             messageSent: "Xabar yuborildi!",
             messageNotSent: "Xabar yuborilmadi, qayta urinib ko'ring.",
           },
+          gadget: {
+            comment: "Izoh qoldirish",
+            emailPlaceholder: "Elektron pochta (majburi)",
+            websitePlaceholder: "Veb-sayt",
+            commentPlaceholder: "Izoh",
+            notPublished:
+              "Sizning elektron pochta manzilingiz e'lon qilinmaydi. Majburiy maydonlar * bilan belgilanadi.",
+            messageSent: "Xabar jo'natildi!",
+            error: "Noto'g'ri elektron pochta, veb-sayt yoki xabar.",
+            messageNotSent:
+              "Xabar jo'natilmedi, iltimos, qaytadan harakat qiling.",
+            button: "Jo'natish",
+            articleText1:
+              "Qachonki, go'zal vodiya atrofimda bug' bilan to'lgan va meridian quyoshi daraxtlarimning o'tkir barglarining yuqori yuzasini yoritayotganida, va faqat bir necha tasodifiy nurlar ichki muqaddaslikka kirsa, men shovqinli oqimga yaqin baland o'tga tashlanaman; va men erga yaqin yotganimda, minglab noma'lum o'simliklarni payqayman: men qalamlar orasidagi kichik dunyoning shovqinini eshitganimda va hasharotlar va mushuklar kabi tasvirga olinmaydigan shakllarga odatlanib qolganimda, Allohning mavjudligini his etaman, u bizni o'z suratimizda yaratgan, va bu umumiy sevgi nafasini, bizni ko'tarib va qo'llab-quvvatlayotgan, bizni baxt etishning abadiyatida parvoz qilayotgan; va keyin, do'stim, qorong'u ko'zlarimni o'ralganda, va osmon va yer mening ruhimda joylashgandek, o'z kuchini yutgandek, ya'ni mening sevimli ma'shuqamning shaklida, o'ylayman, oh, bu tasavvurlarni tasvirlay olsa edim, qog'ozga yozib qo'ysa edim, meni shu qadar to'liq va iliq his qilyotgan barcha narsalarni, u mening ruhimning ko'rinishi bo'lishi uchun, chunki mening ruhim cheksiz Xudoning ko'rinishi.",
+            articleText2:
+              "Ey, do'stim - lekin bu kuchimdan juda ko'p - men bu xayolning hashamatiga bosim o'tkazaman! Ajoyib tinchlik butun ruhimni egallab oldi, bahorning shirin kunlari kabi, ularni to'liq yurak bilan maza qilaman. Men yolg'izman, va ushbu joyda mavjud bo'lish jarayonining jozibasini his qilaman, bu menga o'xshagan ruhlar uchun yaratilgan.",
+            articleText3:
+              "Men juda baxtli, aziz do'stim, shunchaki tinch mavjudlik hissi bilan shunchalik cho'milib, iqtidorimni e'tiborsiz qoldiraman. Hozirgi paytda biron chiziq chizishim qiyin; va shunga qaramay, men hech qachon hozirgi paytda buyuk san'atkor bo'lmaganligimni his qilaman.",
+            articleText4:
+              "Qachonki, go'zal vodiya atrofimda bug' bilan to'lgan va meridian quyoshi daraxtlarimning o'tkir barglarining yuqori yuzasini yoritayotganida, va faqat bir necha tasodifiy nurlar ichki muqaddaslikka kirsa, men shovqinli oqimga yaqin baland o'tga tashlanaman; va men erga yaqin yotganimda, minglab noma'lum o'simliklarni payqayman: men qalamlar orasidagi kichik dunyoning shovqinini eshitganimda va hasharotlar va mushuklar kabi tasvirga olinmaydigan shakllarga odatlanib qolganimda, Allohning mavjudligini his etaman.",
+          },
+          articleText: [
+            "Qachonki, go'zal vodiya atrofimda bug' bilan to'lgan va meridian quyoshi daraxtlarimning o'tkir barglarining yuqori yuzasini yoritayotganida, va faqat bir necha tasodifiy nurlar ichki muqaddaslikka kirsa, men shovqinli oqimga yaqin baland o'tga tashlanaman; va men erga yaqin yotganimda, minglab noma'lum o'simliklarni payqayman: men qalamlar orasidagi kichik dunyoning shovqinini eshitganimda va hasharotlar va mushuklar kabi tasvirga olinmaydigan shakllarga odatlanib qolganimda, Allohning mavjudligini his etaman, u bizni o'z suratimizda yaratgan, va bu umumiy sevgi nafasini, bizni ko'tarib va qo'llab-quvvatlayotgan, bizni baxt etishning abadiyatida parvoz qilayotgan; va keyin, do'stim, qorong'u ko'zlarimni o'ralganida, osmon va yer mening ruhimda yashayotganidek va uning kuchini o'zlashtirayotganida, sevimli sevgilining shakli kabi, men ko'pincha xohish bilan o'ylayman: oh, qanday qilib bu tushunchalarni tasvirlay olishim, men ichimda to'la va iliq yashayotgan narsalarni qog'ozga muhrlab qo'ya olishim.",
+            "Oh, do'stim - lekin bu mening kuchim uchun juda ko'p - men bu tasvirlar go'zalligining og'irligi ostida cho'kmoqdaman! Ajoyib tinchlik butun ruhimni egalladi, xuddi men barcha qalbim bilan bahramand bo'lgan bu shirin ertalab bahorlar kabi. Men yolg'izman va o'zim kabi ruhlarning baxti uchun yaratilgan bu joyda mavjudlik jozibasini his qilaman.",
+            "Men juda baxtliman, aziz do'stim, oddiy tinch hayotning nozik his-tuyg'usi bilan shunchalik to'lib qolganimdan, talantlarimni e'tiborsiz qoldiraman. Hozirda biror bir chiziq chizishim mumkin emas; lekin men hozir hech qachon o'zimdan yaxshi rassom bo'lmaganligimni his qilaman.",
+          ],
         },
       },
     },

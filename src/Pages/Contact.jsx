@@ -102,7 +102,9 @@ const Contact = () => {
           <div className="contact_textbox">
             <h5 className="contact_subtitle">{t("contact.email")}</h5>{" "}
             {/* Tarjima qo'shildi */}
-            <p className="contact_subtext">info@bnpfabric.uz</p>
+            <p className="contact_subtext">
+              <a href="mailto:info@bnpfabric.uz">info@bnpfabric.uz</a>
+            </p>
           </div>
         </div>
         <div className="contact_box">
@@ -110,8 +112,12 @@ const Contact = () => {
           <div className="contact_textbox">
             <h5 className="contact_subtitle">{t("contact.phone")}</h5>{" "}
             {/* Tarjima qo'shildi */}
-            <p className="contact_subtext">+998 93 383 75 85</p>
-            <p className="contact_subtext">+998 93 960 78 00</p>
+            <p className="contact_subtext">
+              <a href="tel:+998 93 383 75 85">+998 93 383 75 85</a>
+            </p>
+            <p className="contact_subtext">
+              <a href="tel:+998 93 960 78 00">+998 93 960 78 00</a>
+            </p>
           </div>
         </div>
         <div className="contact_box">
@@ -119,7 +125,11 @@ const Contact = () => {
           <div className="contact_textbox">
             <h5 className="contact_subtitle">{t("contact.address")}</h5>{" "}
             {/* Tarjima qo'shildi */}
-            <p className="contact_subtext">Bukhara, st. Alpomysh 80</p>
+            <p className="contact_subtext">
+              <a href="https://www.google.com/maps/place/39%C2%B044'50.8%22N+64%C2%B027'35.9%22E/@39.748021,64.45936,16z/data=!4m4!3m3!8m2!3d39.7474444!4d64.4599722?hl=en&entry=ttu&g_ep=EgoyMDI0MDkzMC4wIKXMDSoASAFQAw%3D%3D">
+                Bukhara, st. Alpomysh 80
+              </a>
+            </p>
           </div>
         </div>
       </div>

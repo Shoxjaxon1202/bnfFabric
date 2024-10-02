@@ -174,14 +174,38 @@
 
 @media (max-width: 700px) {
   .winter {
-    &_cards{
+    &_cards {
       width: 100%;
-      flex-direction: column;
+      justify-content: space-between;
+      // flex-direction: column;
+    }
+    .winter_link {
+      width: 47%;
     }
     &_card {
       width: 100%;
     }
-    a{
+    a {
+      width: 85%;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .winter {
+    &_cards {
+      width: 100%;
+      justify-content: space-between;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .winter_link {
+      width: 100%;
+    }
+    &_card {
+      width: 100%;
+    }
+    a {
       width: 85%;
     }
   }
