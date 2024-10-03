@@ -150,6 +150,32 @@ i18n
             "Oh, my friend - but this is too much for my strength - I am drowning under the weight of the magnificence of these visions! A wonderful peace has seized my whole soul, like these sweet morning springs that I enjoy with all my heart. I am alone, and feel the charm of existence in this place that was created for the bliss of souls like mine.",
             "I am so happy, my dear friend, so absorbed in the exquisite feeling of simple peaceful life, that I neglect my talents. I am unable to make a single stroke at the moment; and yet I feel that I have never been a better artist than now.",
           ],
+          tabs: {
+            description: "Description",
+            subtitle: "Geometric Blue Bedding Set",
+            descriptionText:
+              "Bedding is a household item and decor for the bedroom, designed for comfort and beauty. You can choose from a variety of bedding sets that include sheets, blankets, pillowcases, and other accessories. They come in different patterns, prints, embroidery, or other design elements. They are easy to clean and wash quickly. They are made from soft materials and make your bedrooms cozy and comfortable.",
+            reviews: "Reviews (0)",
+            noReviews: "There are no reviews yet.",
+            beFirstReview:
+              "Be the first to leave a review for “Geometric Blue”",
+            requiredFields:
+              "Your email address will not be published. Required fields are marked with *",
+          },
+          form: {
+            name: "Name *",
+            email: "Email *",
+            yourReview: "Your Review *",
+            send: "Send",
+          },
+          review: {
+            newRequest: "New Request",
+            email: "Email",
+            phone: "Phone",
+            message: "Message",
+            rating: "Rating",
+          },
+
         },
       },
       ru: {
@@ -297,6 +323,31 @@ i18n
             "О, мой друг - но это слишком много для моей силы - я тоню под тяжестью великолепия этих видений! Чудесный покой овладел всей моей душой, как эти сладкие утренние весны, которые я наслаждаюсь всем сердцем. Я один, и чувствую очарование существования в этом месте, которое было создано для блаженства душ, подобных моей.",
             "Я так счастлив, мой дорогой друг, так поглощен изысканным ощущением простой спокойной жизни, что пренебрегаю своими талантами. Я не способен провести ни одного штриха в данный момент; и все же я чувствую, что никогда не был лучшим художником, чем сейчас.",
           ],
+          tabs: {
+            description: "Описание",
+            subtitle: "Комплект постельного белья Геометрия синяя",
+            descriptionText:
+              "Постельное белье - это предмет домашнего обихода и декора для спальни, предназначенный для комфорта и красоты. Вы можете выбрать из множества комплектов постельного белья, которые включают простыни, одеяла, наволочки и другие аксессуары. Они имеют разные узоры, принты, вышивку или другие элементы дизайна. Они легки и быстро очищаются и стираются. Они изготовлены из мягких материалов и делают ваши спальни уютными и комфортными.",
+            reviews: "Отзывы(0)",
+            noReviews: "Отзывов пока нет.",
+            beFirstReview:
+              "Будьте первым, кто оставит отзыв о “Геометрия Синяя”",
+            requiredFields:
+              "Ваш адрес электронной почты не будет опубликован. Обязательные поля помечены *",
+          },
+          form: {
+            name: "Имя *",
+            email: "Электронная почта *",
+            yourReview: "Ваш отзыв *",
+            send: "Отправить",
+          },
+          review: {
+            newRequest: "Новая заявка",
+            email: "Email",
+            phone: "Телефон",
+            message: "Сообщение",
+            rating: "Рейтинг",
+          },
         },
       },
       uz: {
@@ -445,6 +496,31 @@ i18n
             "Oh, do'stim - lekin bu mening kuchim uchun juda ko'p - men bu tasvirlar go'zalligining og'irligi ostida cho'kmoqdaman! Ajoyib tinchlik butun ruhimni egalladi, xuddi men barcha qalbim bilan bahramand bo'lgan bu shirin ertalab bahorlar kabi. Men yolg'izman va o'zim kabi ruhlarning baxti uchun yaratilgan bu joyda mavjudlik jozibasini his qilaman.",
             "Men juda baxtliman, aziz do'stim, oddiy tinch hayotning nozik his-tuyg'usi bilan shunchalik to'lib qolganimdan, talantlarimni e'tiborsiz qoldiraman. Hozirda biror bir chiziq chizishim mumkin emas; lekin men hozir hech qachon o'zimdan yaxshi rassom bo'lmaganligimni his qilaman.",
           ],
+          tabs: {
+            description: "Tavsif",
+            subtitle: "Geometriya ko'k to'shak to'plami",
+            descriptionText:
+              "To'shak to'plami - bu yotoqxona uchun qulaylik va go'zallik uchun mo'ljallangan uy-ro'zg'or va dekorativ mahsulot. Siz varaqlar, ko'za, yostiq qoplari va boshqa aksessuarlar kiritilgan turli xil to'shak to'plamlarini tanlashingiz mumkin. Ular turli naqshlar, bosma, tikuv yoki boshqa dizayn elementlariga ega. Ularni tozalash va yuvish oson va tez. Ular yumshoq materiallardan tayyorlangan va yotoqxonangizni qulay va yoqimli qiladi.",
+            reviews: "Sharhlar(0)",
+            noReviews: "Hozircha sharhlar yo'q.",
+            beFirstReview:
+              "“Geometriya Ko'k” to'g'risida birinchi bo'lib sharh qoldiring",
+            requiredFields:
+              "Sizning elektron pochta manzilingiz e'lon qilinmaydi. Majburiy maydonlar belgilangan *",
+          },
+          form: {
+            name: "Ism *",
+            email: "Email *",
+            yourReview: "Sizning sharhingiz *",
+            send: "Yuborish",
+          },
+          review: {
+            newRequest: "Yangi so'rov",
+            email: "Email",
+            phone: "Telefon",
+            message: "Xabar",
+            rating: "Reyting",
+          },
         },
       },
     },

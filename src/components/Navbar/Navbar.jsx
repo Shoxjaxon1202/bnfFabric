@@ -29,6 +29,12 @@ const Navbar = () => {
     document.addEventListener("click", handleClickOutside);
     window.addEventListener("resize", handleResize);
 
+    // LocalStorage dan tilni oling
+    const savedLanguage = localStorage.getItem("i18nextLng");
+    if (savedLanguage) {
+      i18n.changeLanguage(savedLanguage);
+    }
+
     return () => {
       document.removeEventListener("click", handleClickOutside);
       window.removeEventListener("resize", handleResize);
@@ -36,7 +42,9 @@ const Navbar = () => {
   }, [isOpen]);
 
   const changeLanguage = (event) => {
-    i18n.changeLanguage(event.target.value); // Tilni o'zgartirish
+    const selectedLanguage = event.target.value;
+    i18n.changeLanguage(selectedLanguage); // Tilni o'zgartirish
+    localStorage.setItem("i18nextLng", selectedLanguage); // Tanlangan tilni localStorage ga saqlash
   };
 
   return (
@@ -62,7 +70,10 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar_right">
-          <select className="navbar_select" onChange={changeLanguage}>
+          <select
+            className="navbar_select"
+            onChange={changeLanguage}
+            value={i18n.language}>
             <option value="en">EN</option>
             <option value="ru">RU</option>
             <option value="uz">UZ</option>

@@ -1,7 +1,6 @@
 .winter {
   width: 100%;
   margin: 100px auto;
-
   &_title {
     text-align: center;
     font-family: "Poppins", sans-serif;
@@ -26,10 +25,11 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 40px;
+    gap: 20px;
+    // max-width: 1250px;
   }
   &_card {
-    width: 210px;
+    width: 230px;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
@@ -73,6 +73,8 @@
     &_cards {
       // gap: 20px;
       flex-wrap: wrap;
+      // max-width: 1450px;
+      justify-content: space-around !important;
     }
     &_card {
       width: 180px;
@@ -83,7 +85,14 @@
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1700px) {
+  .winter {
+    &_cards {
+      justify-content: center;
+    }
+  }
+}
+@media (max-width: 1080px) {
   .winter {
     margin: 60px auto;
     &_title {
@@ -94,9 +103,13 @@
     }
     &_cards {
       width: 100%;
-      justify-content: center;
+      justify-content: center !important;
       align-items: center;
+      flex-wrap: wrap;
       gap: 20px;
+    }
+    &_link {
+      width: 30%;
     }
     &_card {
       width: 100%;

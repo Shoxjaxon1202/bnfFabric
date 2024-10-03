@@ -30,9 +30,15 @@ const Contact = () => {
         text: text,
       });
       toast.success(t("contact.messageSent")); // Tarjima qo'shildi
+      setEmail("");
+      setPhone("");
+      setMessage("");
     } catch (error) {
       console.error("Xatolik yuz berdi:", error);
       toast.error(t("contact.messageNotSent")); // Tarjima qo'shildi
+      setEmail("");
+      setPhone("");
+      setMessage("");
     }
   };
 
